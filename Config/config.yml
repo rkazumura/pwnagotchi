@@ -3,6 +3,14 @@ main:
         whitelist:
                 - 'Wifi-1'
                 - 'Wifi-2'
+    log:
+        # file to log to
+        path: /var/log/pwnagotchi.log
+        rotation:
+            enabled: true
+            # specify a maximum size to rotate ( format is 10/10B, 10K, 10M 10G )
+            size: '10M'
+
         plugins:
                 memtemp:
                         enabled: true
