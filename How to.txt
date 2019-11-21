@@ -1,0 +1,22 @@
+Folder 'Windows Script'
+
+Powershell script that will allow Windows PC talk to Pi Zero
+
+1. Set the RNDIS Ethernet adapter with an IP of 10.0.0.1, a Subnet Mask of 255.255.255.0, and leave the DNS servers blank.
+
+2. download the script from github here (or copy/paste the whole thing into notepad and name it appropriately),
+
+3. open up an administrative powershell console (ISE or not, it doesn't matter), and navigate to the directory where the script is
+
+4. Run the following command:
+-Open Powershell and change directory to PS location.
+
+.\win_connection_share.ps1 -SetPwnagotchiSubnet
+
+--If prompted that running scripts is disabled on your system, run Set-ExecutionPolicy RemoteSigned and then re-run the command.
+
+--If prompted that you need to reboot, do so before running the following command. (If not prompted to reboot, proceed.)
+.\win_connection_share.ps1 -EnableInternetConnectionSharing
+
+This last command requires you to select which interface is Internet-facing and which is your pwnagotchi. 
+After it completes, you should now be able to SSH into your pi @ 10.0.0.2 and from that SSH session ping out to the Internet.

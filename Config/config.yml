@@ -1,0 +1,31 @@
+main:
+        name: 'Name-pwnagotchi'
+        whitelist:
+                - 'Wifi-1'
+                - 'Wifi-2'
+        plugins:
+                memtemp:
+                        enabled: true
+                        scale: fahrenheit
+                        orientation: horizontal
+                auto-update:
+                        enabled: true
+                        install: true
+                        interval: 1
+                grid:
+                        enabled: true
+                        report: true
+                        exclude:
+                                - 'Wifi-1'
+                                - 'Wifi-2'
+
+ui:
+        display:
+                enabled: true
+                type: 'waveshare_2'
+                color: 'black'
+                                                     
+
+
+
+
