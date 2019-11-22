@@ -1,2 +1,3 @@
 Windows does not share internet with the device - https://www.reddit.com/r/pwnagotchi/comments/dlvv47/windows_does_not_share_internet_with_the_device/
 How To Exit Vim Text Editor Command - https://www.cyberciti.biz/faq/linux-unix-exit-vim-editor/
+Connect Raspberry Pi 3 to Internet https://www.reddit.com/r/pwnagotchi/comments/dpppp4/help_do_i_need_any_extra_stepsconfig_if_im/

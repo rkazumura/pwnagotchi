@@ -20,3 +20,9 @@ Powershell script that will allow Windows PC talk to Pi Zero
 
 This last command requires you to select which interface is Internet-facing and which is your pwnagotchi. 
 After it completes, you should now be able to SSH into your pi @ 10.0.0.2 and from that SSH session ping out to the Internet.
+
+
+
+HOW to Connect Raspberry Pi 3 to eth0
+
+1. Remove gateway from usb0 (/etc/network/interfaces/) and Run dhclient eth0 
